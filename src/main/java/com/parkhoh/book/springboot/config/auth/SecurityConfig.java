@@ -1,6 +1,5 @@
 package com.parkhoh.book.springboot.config.auth;
 
-
 import com.parkhoh.book.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -10,9 +9,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @RequiredArgsConstructor
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
     private final CustomOAuth2UserService customOAuth2UserService;
-x
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
